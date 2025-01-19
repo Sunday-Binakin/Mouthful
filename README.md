@@ -1,8 +1,16 @@
-# React + Vite
+ # Mouthful
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mouthful is a React-based web application for booking and paying for services online. The platform provides users with an intuitive and seamless experience to explore, book, and complete payments for their desired services.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User-friendly Interface**: Clean and responsive design for seamless navigation.
+- **Booking Services**: Browse and book services with ease.
+- **Online Payments**: Secure and efficient payment processing.
+- **Dynamic Sidebar**: Navigation highlighting for active pages.
+- **Scalable Design**: Built for performance and scalability.
+
+## Tech Stack
+
+- **Frontend**: React, React Router, Lucide React (Icons)
+- **Styling**: TailwindCSS  
