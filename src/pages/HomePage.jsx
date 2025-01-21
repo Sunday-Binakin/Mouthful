@@ -10,7 +10,7 @@ const HomePage = () => {
         <hr />
         <div className='md:flex'>
         <Sidebar/>
-        <div className='md:h-[87vh] md:w-[0.1px] md:mx-4 md:border-r md:border md:border-gray'></div>
+        <div className='md:h-[84vh] md:w-[0.1px] md:mx-4 md:border-r md:border md:border-gray'></div>
         <HomeComponent/>
         </div>
     </>

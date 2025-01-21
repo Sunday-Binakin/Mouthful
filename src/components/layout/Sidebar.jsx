@@ -8,7 +8,7 @@ const Sidebar = () => {
 
     return (
         <div className="flex">
-            <div className="md:m-4 md:w-[8rem] md:h-[27rem]">
+            <div className="md:m-4 md:w-[5.5rem] md:h-[27rem]">
                 <Link
                     to="/"
                     className={`md:m-10 md:flex md:flex-col md:items-center ${isActive('/') ? 'text-[#D79F64] font-bold' : ''}`}

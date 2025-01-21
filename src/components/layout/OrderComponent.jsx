@@ -69,7 +69,7 @@ const OrderComponent = () => {
                 </div>
                 <DottedDividerComponent />
                 <div className='md:flex md:flex-col md:h-[15%]  '>
-                    <div className='md:flex md:gap-4 md:justify-around md:mt-2 md:mx-4 md:text-lg md:font-semibold'>
+                    <div className='md:flex md:gap-2 md:justify-around md:mt-1 md:mx-4 md:text-lg md:font-semibold'>
                         <p className='md:mt-4'>ADD TIP</p>
                         <TipComponent amount={5} />
                         <TipComponent amount={10} />
@@ -78,7 +78,7 @@ const OrderComponent = () => {
                     </div>
                     <DottedDividerComponent />
                 </div>
-                <div className='md:flex md:justify-around md:mb-4 md:h-[15%]   '>
+                <div className='md:flex md:justify-around md:mb-6 md:h-[10%]   '>
 
                     <PaymentComponent logo={<Banknote />} string={'CASH'} />
                     <PaymentComponent logo={<CreditCard />} string={'CARD'} />
@@ -120,7 +120,7 @@ const OrderComponent = () => {
 
                 </div>
                 <div className='md:flex md:flex-col   '>
-                    <button className='md:bg-[rgb(139,182,191)]  md:h-14 md:text-4xl rounded-lg'>PAY NOW</button>
+                    <button className='md:bg-[rgb(139,182,191)]  md:h-20 md:text-4xl rounded-lg'>PAY NOW</button>
                 </div>
 
             </div>

@@ -89,24 +89,39 @@ const HomeComponent = () => {
         <div className="md:flex md:flex-wrap md:justify-between md:mt-6 md:px-4 md:py-4">
           {foodItems.map((item) => (
             <div key={item.id} className="md:w-[23%] md:mb-4 md:rounded-md">
+            {/* <div key={item.id} className="md:w-[23%] md:mb-4 md:rounded-md"> */}
               <img
                 src={item.image}
-                className="md:w-full md:h-[8rem] md:rounded-t-md object-cover"
+                className="md:w-full md:h-[5.4rem] md:rounded-t-md object-cover"
                 alt={item.name.toLowerCase()}
               />
-              <div className="md:flex md:flex-col md:mb-2 bg-[rgb(216,230,233)] md:rounded-md">
-                <p className="md:flex md:justify-center md:m-2 font-semibold">
+              <div className="md:flex md:flex-col md:h-[3rem] md:mb-2 bg-[rgb(216,230,233)] md:rounded-md">
+                <p className="md:flex md:justify-center md:m-1 md:text-[0.8rem] font-semibold">
                   {item.name}
                 </p>
                 <div className="md:flex md:justify-around md:mb-2 md:rounded-lg">
-                  <p className="md:text-xs md:font-semibold md:ml-2">
+                  <p className="md:text-[0.8rem] md:font-semibold md:ml-2">
+                  {/* <p className="md:text-xs md:font-semibold md:ml-2"> */}
                     CATEGORY:
                   </p>
-                  <div className="md:h-[1.2rem] md:w-[1.2rem] md:rounded-[50%] md:bg-[#E1B284] text-black font-semibold md:flex md:items-center md:justify-center">
+                  <div className="md:h-[1.2rem] md:w-[1.2rem]  md:rounded-[50%] md:bg-[#E1B284] text-black font-semibold md:flex md:items-center md:justify-center">
                     {item.category}
                   </div>
                 </div>
               </div>
+                {/* <div className="md:flex md:flex-col md:mb-2 bg-[rgb(216,230,233)] md:rounded-md">
+                  <p className="md:flex md:justify-center md:m-2 font-semibold">
+                    {item.name}
+                  </p>
+                  <div className="md:flex md:justify-around md:mb-2 md:rounded-lg">
+                    <p className="md:text-xs md:font-semibold md:ml-2">
+                      CATEGORY:
+                    </p>
+                    <div className="md:h-[1.2rem] md:w-[1.2rem] md:rounded-[50%] md:bg-[#E1B284] text-black font-semibold md:flex md:items-center md:justify-center">
+                      {item.category}
+                    </div>
+                  </div>
+                </div> */}
             </div>
           ))}
         </div>
@@ -120,9 +135,9 @@ const HomeComponent = () => {
 
         
       </div>
-      <div className="h-[87vh] w-[0.1px] mx-4 border-r border border-gray"></div>
+      <div className="h-[84vh] w-[0.1px] mx-4 border-r border border-gray"></div>
       <div className="w-[25%]   mb-6 mt-4 mr-4 rounded-md ">
-        <div className="md:flex md:font-semibold md:justify-between md:mx-6 md:mt-2 ">
+        <div className="md:flex  md:font-semibold md:justify-between md:mx-6">
           <h1 className="md:text-2xl">ORDER #</h1>
           <h1 className="md:text-2xl">12345678</h1>
         </div>
@@ -131,8 +146,8 @@ const HomeComponent = () => {
   {[{ name: 'CHICKEN WINGS', price: '$20', quantity: 1, imgSrc: salad },
     { name: 'CAESAR SALAD', price: '$20', quantity: 1, imgSrc: greens },
     { name: 'SUMMER SALAD', price: '$20', quantity: 1, imgSrc: yummy }].map((item, index) => (
-    <div key={index} className="md:bg-[rgb(216,230,233)] md:flex md:justify-around h-[6rem] md:mt-8 md:mx-6 md:rounded-lg md:shadow-md">
-      <div className="md:w-[6rem] md:h-[6rem] md:my-4">
+    <div key={index} className="md:bg-[rgb(216,230,233)] md:flex md:justify-around h-[6rem] md:mt-3 md:mx-6 md:rounded-lg md:shadow-md">
+      <div className="md:w-[6rem] md:h-[4rem] md:my-4">
         <img
           src={item.imgSrc}
           alt={item.name}
@@ -150,8 +165,8 @@ const HomeComponent = () => {
     </div>
   ))}
 </div>
-        <div className="w-4/3 h-[20rem]  mx-6 mt-6 border-2 border-dashed border-gray-400 rounded-lg">
-          <div className="flex justify-between mx-4 mt-6 font-semibold text-lg">
+        <div className="w-4/3 h-[12rem]  mx-6 mt-3 border-2 border-dashed border-gray-400 rounded-lg">
+          <div className="flex justify-between mx-4 mt-2 font-semibold text-lg">
             <p>SUBTOTAL</p>
             <p>GHC 35.00</p>
           </div>
@@ -161,12 +176,12 @@ const HomeComponent = () => {
             </p>
             <p>GHC 3.50</p>
           </div>
-          <div className="md:border-[0.9px] md:border-dashed md:mt-4 md:border-gray-400"></div>
-          <div className="md:flex md:justify-between md:text-3xl md:mx-4 md:mt-6 md:font-bold">
+          <div className="md:border-[0.9px] md:border-dashed md:mt-1 md:border-gray-400"></div>
+          <div className="md:flex md:justify-between md:text-3xl md:mx-4 md:mt-2 md:font-bold">
             <p>TOTAL</p>
             <p>GHC38.50</p>
           </div>
-          <div className="flex justify-between mx-6 mt-14">
+          <div className="flex justify-between mx-6 mt-3">
             <button className="bg-red-400 md:h-[3rem] md:w-[7rem] md:text-[0.8rem] md:font-bold md:rounded-md">
               CANCEL ORDER
             </button>
